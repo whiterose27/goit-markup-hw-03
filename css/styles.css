@@ -3,24 +3,38 @@
 *::after {
   box-sizing: border-box;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
 
-body {
+.container {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #2e2f42;
   font-size: 16px;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 auto;
+  gap: 120px;
 }
-
 /*Logo başlangıç*/
 .page-header {
-  width: 1128px;
   height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  flex-wrap: wrap;
+  padding: 24px 156px;
+  border-bottom: 1px solid transparent;
 }
 
 .header-logo {
@@ -47,9 +61,9 @@ body {
 /* Menü başlangıç*/
 .menu .menu-ul {
   display: flex;
-  align-items: center;
+  align-items: ;
   justify-content: space-between;
-  gap: 15px;
+  gap: 40px;
 }
 .menu .menu-ul .menu-item {
   list-style-type: none;
@@ -75,7 +89,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 40px;
 }
 .contacts-list {
   list-style-type: none;
@@ -100,7 +114,7 @@ body {
 .section-slider {
   text-align: center;
   background-color: #2e2f42;
-  width: 1440px;
+  max-width: 1440px;
   height: 600px;
   padding: 150px;
 }
@@ -138,20 +152,14 @@ body {
 /* Slider alanı bitti*/
 /* Açıklamalar başlangıç*/
 .section-first {
-  max-width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  flex-wrap: wrap;
+  height: 104px;
+  flex-direction: row;
+  padding: 120px 156px;
 }
 
 .section-first .section-first-ul {
-  width: 1128px;
-  height: 104px;
   display: flex;
-  align-items: center;
-  padding: 0;
-  gap: 8px;
+  gap: 24px;
 }
 .section-first .section-first-ul .section-first-list {
   list-style-type: none;
@@ -162,6 +170,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
   color: #2e2f42;
 }
 .section-first-text {
@@ -186,9 +195,10 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 100px;
 }
 .team-images {
-  max-width: 1128px;
+  width: 1128px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -199,6 +209,8 @@ body {
 }
 .team-images .team-images-list {
   list-style-type: none;
+  padding: 10px;
+  padding-top: 100px;
 }
 
 .team-subtitle {
@@ -222,8 +234,9 @@ body {
 /* Our portfolio başlangıç*/
 .section-portfolio {
   text-align: center;
+  padding: 72px 156px 120px;
+  border-bottom: 1px solid transparent;
 }
-
 .section-portfolio .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -231,19 +244,20 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding: 72px;
 }
 .portfolio-images {
-  max-width: 1128px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 }
 .portfolio-images .portfolio-images-list {
   list-style-type: none;
+  padding-bottom: 48px;
 }
 .portfolio-subtitle {
   font-weight: 500;
@@ -273,11 +287,13 @@ body {
 /* Our portfolio bitiş*/
 footer {
   background-color: #2e2f42;
-  width: 1440px;
   height: 312px;
-  padding: 100px;
+  padding-top: 100px;
+  padding-left: 156px;
 }
+
 .footer-logo {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -286,13 +302,10 @@ footer {
   text-transform: uppercase;
   color: #f4f4fd;
   text-decoration: none;
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   gap: 0px;
-  margin-left: auto;
-  margin-right: auto;
   flex-wrap: wrap;
 }
 
@@ -302,6 +315,7 @@ footer {
   background-color: #2e2f42;
 }
 .footer-text {
+  display: flex;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -313,4 +327,5 @@ footer {
   display: flex;
   justify-content: flex-start;
   gap: 0px;
+  padding-top: 16px;
 }
